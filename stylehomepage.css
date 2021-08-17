@@ -8,7 +8,9 @@ body {
   margin:0;
 }
 button {
-  
+  margin: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #Ea3a30;
 }
 h1 {
   color: white;
