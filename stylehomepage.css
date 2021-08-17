@@ -10,7 +10,8 @@ body {
 button {
   margin: auto;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #Ea3a30;
+  color: white;
+  background-color: #Ea3a30;
 }
 h1 {
   color: white;
