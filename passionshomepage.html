@@ -54,6 +54,22 @@
         </tr>
       </table>
 <h4>
+    ar myIndex = 0;
+slideshow()
+
+function slideshow() {
+  var i;
+  var x = document.getElementsByClassName("center");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  
+  if (myIndex >= x.length) {myIndex = 0}    
+  x[myIndex].style.display = "block";  
+  myIndex++;
+  setTimeout(slideshow, 1000); // Change image every 2 seconds
+}
+    
     <h4> Images From The Game ;<h4>
         <img src="1.jpg" alt="Genshin" class="center">
         <img src="2.jpg" alt="Genshin" class="center">
