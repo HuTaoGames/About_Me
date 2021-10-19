@@ -2,6 +2,13 @@
 <html lang="en">
 <script>
     alert("Warning This User Is OBSSESSED With Genshin Impact And Anime");
+    function myFunction(){
+        var x=document.getElementById("navtop")
+        if(x.className=="topnav"
+           }
+        else{
+            x.className="topnav"
+        }
 </script>
 <head>
     <title>Navigation</title>
@@ -13,13 +20,14 @@
     <h1>Homepage</h1>
     </header>
     <nav>
-        <div class="topnav">
+        <div class="topnav" id="navtop">
             <a class="active" href="index.html">Home</a>
             <a href="MyWebsiteProject.html">About Me</a>
             <a href="passionshomepage.html">Genshin Impact</a>
             <a href="contactpage.html">Contact</a>
             <a href="mycarrd.html">My Carrd</a>
             <a href="aesthetics.html">Aesthetics</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><"bars.png"/a>
           </div>
     </nav>
 
