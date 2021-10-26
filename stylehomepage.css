@@ -95,3 +95,8 @@ h2 {
   margin-right: auto;
   width: 50%;
 }
+/*changes the look of the website on different devices*/
+@media screen and (max-width:600px){
+  body{background-color: blue;}
+  #gif1{display:none;}
+}
