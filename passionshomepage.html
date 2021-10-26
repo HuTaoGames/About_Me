@@ -54,9 +54,10 @@
         </tr>
       </table>
 <h4>
-    ar myIndex = 0;
+<script>
+    var myIndex = 0;
 slideshow()
-
+    
 function slideshow() {
   var i;
   var x = document.getElementsByClassName("center");
@@ -69,6 +70,7 @@ function slideshow() {
   myIndex++;
   setTimeout(slideshow, 1000); // Change image every 2 seconds
 }
+  </script>
     
     <h4> Images From The Game ;<h4>
         <img src="1.jpg" alt="Genshin" class="center">
