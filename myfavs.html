@@ -11,3 +11,54 @@
             <a href="myfavs.html"> My Favorite Medias</a>
           </div>
     </nav>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCanvas</title>
+</head>
+<body style="background-color:darkred;">
+    <h1>
+        This Is A Canvas
+    </h1>
+    <canvas id="canvas" style="background-color: rgba(128, 128, 128, 0.356);">   
+
+    </canvas>
+    <script>
+        var mycanvas = document.getElementById("canvas");
+        var c = mycanvas.getContext("2d");
+        mycanvas.width = window.innerWidth;
+        mycanvas.height = window.innerHeight;
+        var img = new Image();
+        img.src = "hutaocries.png";
+        var dx = 0;
+        var dy = mycanvas.height;
+        function Move(){
+            c.clearRect(0,0,mycanvas.width, mycanvas.height);
+            c.fillStyle="light grey";
+            c.font="30px 'Dekko'"
+            c.fillText("Hu Tao Will Come Home",50,100)
+            c.strokeText("Or else I will be very sad :'(",dx,150)
+            c.strokeStyle="black"
+            c.drawImage(img,mycanvas.width/2,dy,100,100);
+            dy = dy - 10;
+            dx = dx + 10;
+            if(dx>mycanvas.width){
+                dx = 0
+            }
+            if(dy<0){
+                dy = mycanvas.height;
+            }
+            c.fillRect(mycanvas.width/2, mycanvas.height/2,300,100)
+            c.strokeRect(mycanvas.width/2, mycanvas.height/2,300,100)
+            c.beginPath()
+            c.arc(300,400,50,0,Math.PI)
+            c.stroke()
+        }
+        setInterval(Move,140);
+    </script>
+</body>
+</html>
