@@ -10,6 +10,35 @@
     <link rel="stylesheet" href="stylehomepage.css">
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date & Time</title>
+</head>
+<body>
+    <p id="today"></p>
+    <p id="message"></p>
+    <p>Hi There (●'◡'●)</p>
+</body>
+<script>
+    function getdate(){
+        var day=new Date();
+        today.innerHTML= day.toLocaleString();
+        if(day.getHours()<12){
+            message.innerHTML="Good Morning 💕";
+        }
+        else if(day.getHours()<15){
+            message.innerHTML="Good Afternoon 💕";
+        }
+        else if(day.getHours()<18){
+            message.innerHTML="Sleep Now";
+        }
+        else{message.innerHTML="Good Evening 💕";}
+    }
+    setInterval(getdate, 1000);
+</script>
+</html>
     <header>
     <h1>Homepage</h1>
     </header>
