@@ -50,6 +50,11 @@ p {
   background-color: rgb(79, 49, 218);
   color: white;
 }
+.message {
+  color: white;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 h5 {
   color: white;
