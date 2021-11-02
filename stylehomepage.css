@@ -10,12 +10,14 @@ body {
 title {
 	color: white;
   	text-align: center;
+	font-size: 40px;
 }
 button {
   margin: auto;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: white;
   background-color: #0d0426;
+	font-size: 40px;
 }
 h1 {
   color: white;
@@ -56,9 +58,10 @@ color: white
   color: white;
 }
 .message {
-  color: white;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  	color: white;
+ 	text-align: center;
+  	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 40px;
 }
 
 h5 {
